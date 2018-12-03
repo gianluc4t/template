@@ -20,6 +20,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.everis.lab.gt.App;
 import com.everis.lab.gt.model.Record;
 import com.everis.lab.gt.repository.OperationRepository;
+import com.everis.lab.gt.service.impl.OperationServiceImpl;
 
 @ActiveProfiles("test")
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -30,7 +31,7 @@ public class OperationServiceTest {
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	@InjectMocks
-	private OperationService operationService;
+	private OperationServiceImpl operationService;
 
 	@Mock 
     OperationRepository operationRepository; 

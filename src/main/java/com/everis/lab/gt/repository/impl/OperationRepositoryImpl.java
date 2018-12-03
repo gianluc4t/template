@@ -1,23 +1,19 @@
-package com.everis.lab.gt.repository;
+package com.everis.lab.gt.repository.impl;
 
 import java.util.List;
 
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 
 import com.everis.lab.gt.model.Record;
 
 @Component
-public interface OperationRepository  extends CrudRepository<Record, Long> {
+public interface OperationRepositoryImpl  extends CrudRepository<Record, Long> {
 
     List<Record> findByName(String name);
 
-    @Cacheable("findByValue")
     List<Record> findByValue(int lastName);
 
     List<Record> findByNameAndValue(String name, int lastName);
-
-    List<Record> findAll();
-	
+    
 	}

@@ -6,6 +6,7 @@ This app is just a template base to develop Web service restfull , using
 * hibernate as ORM, 
 * spring data for data acess model, 
 * spring boot as web server solution, 
+* spring cache and ehcache, 
 * swagger-ui as documentation pattern, 
 * junit+mockito for unit test layer
 * docker 

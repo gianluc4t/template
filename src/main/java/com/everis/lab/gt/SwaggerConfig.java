@@ -1,4 +1,4 @@
-package com.everis.lab.gt.endpoint;
+package com.everis.lab.gt;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

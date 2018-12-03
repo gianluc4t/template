@@ -38,6 +38,12 @@ public class Operation {
         return a;
     }
     
+    @GetMapping("/recuerdalo")
+    public List<Record> getCachedMapping() {
+    	List<Record> a = operationService.findAllo();    	
+        return a;
+    }
+    
     @PostMapping("/record")
     public Record postMapping(@RequestBody PostRecordRequest postRecordRequest) {
 
